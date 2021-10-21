@@ -70,13 +70,13 @@ class music_cog(commands.Cog):
         voice_channel = ctx.author.voice.channel
         if voice_channel is None:
             #you need to be connected so that the bot knows where to go
-            await ctx.send("Connect to a voice channel!")
+            await ctx.send("Connect to a voice channel. What you doin' man?")
         else:
             song = self.search_yt(query)
             if type(song) == type(True):
-                await ctx.send("Could not download the song. Incorrect format try another keyword. This could be due to playlist or a livestream format.")
+                await ctx.send("Could not download the song. Incorrect format try another keyword. This could be due to playlist or a livestream format. Keep tryin' peeps.")
             else:
-                await ctx.send("Song added to the queue")
+                await ctx.send("Song added to the queue. Gotchu homie! *Inserts brofist*")
                 self.music_queue.append([song, voice_channel])
                 
                 if self.is_playing == False:
@@ -92,19 +92,20 @@ class music_cog(commands.Cog):
         if retval != "":
             await ctx.send(retval)
         else:
-            await ctx.send("No music in queue")
+            await ctx.send("No music in queue, dawg. Sheeeeeeeeeeeeesh.")
 
     @commands.command(name="skip", help="Skips the current song being played")
     async def skip(self, ctx):
          if self.vc != "" and self.vc:
             self.vc.stop()
+            await ctx.send("Why da skip it?")
             #try to play next in the queue if it exists
             await self.play_music()
-    @commands.command(name="Pause", help="Pauses the current song being played")
+    @commands.command(name="pause", help="Pauses the current song being played")
     async def pause(self, ctx):
          if self.vc != "" and self.vc:
             self.vc.pause()
-    @commands.command(name="Resume", help="Pauses the current song being played")
+    @commands.command(name="resume", help="Resumes the current song being played")
     async def resume(self, ctx):
          if self.vc != "" and self.vc:
             self.vc.resume()
