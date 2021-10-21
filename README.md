@@ -6,3 +6,6 @@ Link: https://discord.com/api/oauth2/authorize?client_id=900338255248121886&perm
 
 Made by GenZ, For GenZ's. 
 Njoy!
+
+![download (2)](https://user-images.githubusercontent.com/59911272/138224699-51de5d92-76ad-445c-8ef7-4a107b449363.png)
+
