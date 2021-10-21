@@ -9,7 +9,7 @@ import os
 from main_cog import main_cog
 #from image_cog import image_cog
 from music_cog import music_cog
-TOKEN="OTAwMzM4MjU1MjQ4MTIxODg2.YW_3Vw.2MqKcMHMTLKK6nj7XwmUJnkgKf0"
+
 bot = commands.Bot(command_prefix='Z')
 
 #remove the default help command so that we can write out own
