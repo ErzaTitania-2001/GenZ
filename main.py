@@ -8,7 +8,7 @@ import os
 #import all of the cogs
 from main_cog import main_cog
 from music_cog import music_cog
-TOKEN="OTAwMzM4MjU1MjQ4MTIxODg2.YW_3Vw.bW44n6RcbSokdO58XxaUAUOHgXk"
+
 bot = commands.Bot(command_prefix='Z')
 
 #remove the default help command so that we can write out own
