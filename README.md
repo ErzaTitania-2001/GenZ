@@ -3,6 +3,8 @@
 Invite this music bot to your server and chill, all GenZ's.
 
 Watch it : https://youtu.be/fkFqvFz2vGk
+[![Watch the video](https://img.youtube.com/vi/fkFqvFz2vGk/hqdefault.jpg)](https://youtu.be/fkFqvFz2vGk)
+
 
 Link: https://discord.com/api/oauth2/authorize?client_id=900338255248121886&permissions=8&scope=bot
 
